@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+#container {
+  padding-top: 20px;
+}
+
+#form-fundo {
+  background-color: #9f82f037;
+  padding: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#botaopurple {
+  background-color: #9F82F0;
+  color: #fff;
+  border: none;
+}
+
+@media (max-width: 576px) {
+  #form-fundo {
+    padding: 10px;
+  }
+}
+
+
+
+footer {
+  background-color: #9F82F0;
+  background-position: 100%;
+  font-weight: bold;
+  flex-shrink: 0;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
+}

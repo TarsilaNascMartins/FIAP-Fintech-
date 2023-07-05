@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  background-color: transparent;
+}
+
+footer {
+  background-color: #9F82F0;
+  background-position: 100%;
+  font-weight: bold;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#roxo {
+  background-color: #9F82F0;
+}
+
+#roxo p {
+  color: beige;
+}
+
+#nav {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#btnroxo {
+  background-color: #9F82F0;
+  color: #0c0c0caf;
+  border: 1px solid #9F82F0;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+#logo {
+  padding: 10px 20px 15px 25px;
+}
+
+#valor {
+  width: 50%;
+  height: 50px;
+  position: relative;
+  background-color: #39383841;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+}
+
+.icon-link {
+  color: #9F82F0;
+}
+
+#mao {
+  height: 20%;
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para telas menores ou iguais a 768px */
+
+  #valor {
+    width: 100%;
+  }
+
+  #logo {
+    padding: 10px;
+  }
+
+  #btnroxo {
+    width: 150px;
+  }
+}

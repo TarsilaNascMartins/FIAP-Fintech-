@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/listagem.css">
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-Xs8OLW7XVv79jVxZbvnWv2HN3qlKp8fJ2K62V3A1inJH8hhTFbDv5aQKQMyR2DNJ"
+        crossorigin="anonymous"></script>
+
+    <div class="container">
+        <div class="content">
+            <div class="logo-container">
+                <a href="Home.html">
+                    <img src="assets/images/Logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="text-center">
+                <h2>Tabela de Gastos</h2>
+            </div>
+            <p>
+            <div class="row justify-content-between">
+                <div class="col-md-4 text-center">
+                    <button type="button" class="btn btn-dark">Adicionar Novo Gasto</button>
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Dúvidas
+                    </button>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <input type="text" id="Busca" size="20">
+                    <button type="button" id="btnclick" class="btn btn-dark"><b>FILTRAR</b></button>
+                </div>
+            </div>
+            </p>
+            <div class="center">
+                <div id="divConteudo">
+                    <!-- Conteúdo da tabela -->
+                    <div class="center">
+
+                        <div id="divConteudo">
+                            <table id="tabela">
+                                <thead>
+                                    <tr>
+                                        <th>#id</th>
+                                        <th>Sobre</th>
+                                        <th>Data Lançamento/Hora</th>
+                                        <th>Nome</th>
+                                        <th>Descrição</th>
+                                        <th>Valor</th>
+                                        <th>Tipo</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="tbodyListagem">
+                                    <tr style="display: table-row;" id="coluna" data-index="1">
+                                        <td id="Codigo">1</td>
+                                        <td id="dropdown">
+                                            <div class="dropdown">
+                                                <input type="checkbox" id="dropdown-checkbox" class="dropdown-checkbox">
+                                                <label for="dropdown-checkbox" class="dropbtn">...</label>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Editar</a>
+                                                    <a href="#">Duplicar</a>
+                                                    <a href="#">Deletar</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>02/07/2023 13:20</td>
+                                        <td>Shein Compras Ltda</td>
+                                        <td>Casaco de frio</td>
+                                        <td>120,00R$</td>
+                                        <td>Débito</td>
+                                    </tr>
+
+                                    <tr style="display: table-row;" id="coluna" data-index="1">
+                                        <td id="Codigo">2</td>
+                                        <td id="dropdown">
+                                            <div class="dropdown">
+                                                <input type="checkbox" id="dropdown-checkbox" class="dropdown-checkbox">
+                                                <label for="dropdown-checkbox" class="dropbtn">...</label>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Editar</a>
+                                                    <a href="#">Duplicar</a>
+                                                    <a href="#">Deletar</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>02/07/2023 13:20</td>
+                                        <td>Shein Compras Ltda</td>
+                                        <td>Casaco de frio</td>
+                                        <td>120,00R$</td>
+                                        <td>Débito</td>
+                                    </tr>
+
+                                    <tr style="display: table-row;" id="coluna" data-index="1">
+                                        <td id="Codigo">3</td>
+                                        <td id="dropdown">
+                                            <div class="dropdown">
+                                                <input type="checkbox" id="dropdown-checkbox" class="dropdown-checkbox">
+                                                <label for="dropdown-checkbox" class="dropbtn">...</label>
+                                                <div class="dropdown-content">
+                                                    <a href="#">Editar</a>
+                                                    <a href="#">Duplicar</a>
+                                                    <a href="#">Deletar</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>02/07/2023 13:20</td>
+                                        <td>Shein Compras Ltda</td>
+                                        <td>Casaco de frio</td>
+                                        <td>120,00R$</td>
+                                        <td>Débito</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="d-flex flex-wrap align-items-center py-3 ">
+            <p class="col-md-4 mb-1 text-body-secondary justify-content-center">2023 Gain Break©, Inc</p>
+            <a href="Home.html"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <image src="assets/images/Logo.png" height=50></image>
+            </a>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>
